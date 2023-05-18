@@ -1,6 +1,6 @@
 const form = document.getElementById('form-agenda');
 const nomeAmigo = [];
-const foneAmigo =[];
+const foneAmigo = [];
 
 let linhas = '';
 
@@ -15,11 +15,12 @@ function adicionaLinha() {
     const inputNomeAmigo = document.getElementById('nome-amigo');
     const inputFoneAmigo = document.getElementById('fone-amigo');
 
-    if (nomeAmigo.includes(inputNomeAmigo.value)) {
-        alert(`O amigo(a): ${inputNomeAmigo.value} já foi inserido(a)!`);
-    } else {
+    
         nomeAmigo.push(inputNomeAmigo.value);
         foneAmigo.push(inputFoneAmigo);
+
+        console.log(inputNomeAmigo.value)
+        console.log(inputFoneAmigo.value)
 
         let linha = '<tr>';
         linha += `<td>${inputNomeAmigo.value}</td>`;
@@ -27,7 +28,7 @@ function adicionaLinha() {
         linha += `</tr>`;
 
         linhas += linha;
-    }
+    
 
     inputNomeAmigo.value = '';
     inputFoneAmigo.value = '';
