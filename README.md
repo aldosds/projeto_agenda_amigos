@@ -1,6 +1,7 @@
 # Landing Page: Agenda de Amigos
 
-Criada com HTML, CSS e Javascript.
+Criada com HTML, CSS e Javascript. <br>
+Link: https://projeto-agenda-amigos.vercel.app/
 
 ## Agenda de Amigos
 
